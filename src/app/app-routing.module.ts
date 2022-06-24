@@ -8,7 +8,7 @@ const routes: Routes = [
     path:'', component: HomePageComponent
   },
   {
-    path:'login', Component: LoginComponent
+    path:'login', component: LoginComponent
   }
 ];
 
@@ -17,3 +17,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

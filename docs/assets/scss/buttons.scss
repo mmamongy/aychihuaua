@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+
+.ay-btn{
+    margin:2rem ;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top: 1.3rem;
+    min-width: 144px;
+    text-align: center;
+    font-size: 20px;
+    height: 4rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.ay-link-btn-lg{
+    color: $white;
+    background-color: $dark-blue;
+    &:hover{
+        color: rgb(255, 89, 90);
+    }
+}
