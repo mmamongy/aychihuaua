@@ -1,0 +1,11 @@
+@import './../../../assets//scss/variables.scss';
+.footer-container {
+    background-color: $dark-blue;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    li > a{
+        color :#fff !important;
+    }
+
+}

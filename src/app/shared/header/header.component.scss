@@ -1,0 +1,12 @@
+@import './../../../assets/scss/variables.scss';
+.navbar {
+    height: 120px;
+ 
+    .navbar-dark .navbar-brand{
+        color: $primary-color;
+    }
+  
+}
+.bg-dark{
+    background-color: $dark-blue !important;
+}
