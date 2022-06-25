@@ -1,15 +1,21 @@
 import { LoginComponent } from './login/login.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'', component: HomePageComponent
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+},
+  {
+    path: '',
+    loadChildren: () => import ('./public/public.module').then(m => m.PublicModule)
   },
   {
     path:'login', component: LoginComponent
   }
+ 
 ];
 
 @NgModule({

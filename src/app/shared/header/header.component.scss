@@ -5,6 +5,12 @@
     .navbar-dark .navbar-brand{
         color: $primary-color;
     }
+
+    .nav-link{
+        &:hover{
+            cursor: pointer;
+        }
+    }
   
 }
 .bg-dark{

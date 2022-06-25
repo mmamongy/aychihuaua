@@ -1,8 +1,13 @@
 @import './assets/scss/buttons.scss' ;
-@import './assets//scss//carousel.scss';
+@import './assets/scss/carousel.scss';
+@import './assets/scss/helper.scss';
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "metropolis";
+    src: local("metropolis"), url(./assets/fonts/metropolis/Metropolis-Regular.otf ) format("truetype");
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "metropolis", Roboto, "Helvetica Neue", sans-serif; }
 
 
