@@ -1,0 +1,47 @@
+@import "./../../../assets/scss/variables.scss";
+.row{
+    --bs-gutter-x: 0 ;
+}
+.section-1 {
+
+  
+
+  .section-text {
+    height: auto;
+    color: $dark-blue;
+    margin: auto;
+    
+    
+  }
+  .section-image {
+    flex-basis: 50;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    border: 0px solid black;
+    box-sizing: border-box;
+  
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+.section-2{
+  margin-top: 64px ;
+  margin-bottom: 64px;
+  img {
+    height: 395px;
+  }
+}
+
+.media-img{
+  width: 500px;
+  height: 100%;
+}
+
+.space-bottom {
+  margin-bottom : 5rem ;
+}
+
