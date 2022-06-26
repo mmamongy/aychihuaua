@@ -1,3 +1,4 @@
+import { QuestionsComponent } from './questions/questions.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
     component: HomePageComponent,
   },
   { path: 'about', component: AboutComponent },
+  { path: 'get-started', component: QuestionsComponent}
 ];
 
 @NgModule({

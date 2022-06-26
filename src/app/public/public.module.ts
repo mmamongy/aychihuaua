@@ -6,13 +6,17 @@ import { PublicRoutingModule } from './public-routing.module';
 import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 import { SharedModule } from './../shared/shared.module';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 
 @NgModule({
   declarations: [
     AboutComponent,
     HomePageComponent,
-    MainComponent
+    MainComponent,
+    ContactUsComponent,
+    QuestionsComponent
   ],
   imports: [
     PublicRoutingModule,
