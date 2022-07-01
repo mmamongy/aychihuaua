@@ -1,3 +1,5 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 @import './assets/scss/buttons.scss' ;
 @import './assets/scss/carousel.scss';
 @import './assets/scss/helper.scss';
@@ -5,6 +7,14 @@
 @font-face {
     font-family: "metropolis";
     src: local("metropolis"), url(./assets/fonts/metropolis/Metropolis-Regular.otf ) format("truetype");
+}
+@font-face {
+    font-family: "metropolis-blod";
+    src: local("metropolis"), url(./assets/fonts/metropolis/Metropolis-Bold.otf ) format("truetype");
+}
+@font-face {
+    font-family: "metropolis-light";
+    src: local("metropolis"), url(./assets/fonts/metropolis/Metropolis-Bold.otf ) format("truetype");
 }
 
 html, body { height: 100%; }

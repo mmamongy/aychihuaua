@@ -64,3 +64,23 @@
 .banner{
   height: 70vh;
 }
+.main-headline{
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: $ff-bold;
+}
+.main-title{
+  background-color: $primary-color;
+  color: $dark-blue;
+  font-family: $ff-bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sections-space {
+  margin-top: 6rem ;
+  margin-bottom: 6rem;
+  font-family: $ff-regular;
+}
