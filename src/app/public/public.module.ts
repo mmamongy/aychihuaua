@@ -1,7 +1,7 @@
 import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms'
 import { PublicRoutingModule } from './public-routing.module';
 import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
@@ -22,6 +22,7 @@ import { QuestionsComponent } from './questions/questions.component';
     PublicRoutingModule,
     CommonModule,
     SharedModule,
+    FormsModule
     
     
   ]
