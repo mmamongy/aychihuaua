@@ -26,9 +26,17 @@
 <div class="d-flex justify-content-center ">
     Let's Start
 </div>
+
+
     <div class="arrow-button-wrapper d-flex justify-content-center ">
+
+        <button type="button" class="btn btn-link" (click)="showNextQuestionAndSaveAnswer('')" [disabled]="currentQId == 0">
+
+            <i class="bi bi-arrow-left-circle"></i>
+        </button>
         <button type="button" class="btn btn-link" (click)="showNextQuestionAndSaveAnswer('')">
-            <i class="bi bi-arrow-down-circle"></i>
+
+            <i class="bi bi-arrow-right-circle"></i>
         </button>
     </div>
 </div>
