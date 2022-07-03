@@ -22,13 +22,13 @@ export class QuestionsComponent implements OnInit {
   }
 
   showNextQuestionAndSaveAnswer( answer: any){
-    this.currentQuestion = this.questions[this.currentQId].q ;
     this.currentQId += 1;
+    this.currentQuestion = this.questions[this.currentQId].q ;
+    this.currentAnswer = this.answers[this.currentQId].answers;
   }
 
   onClickGetStarted  () {
     this.currentQuestion = this.questions[this.currentQId].q ;
-
   }
 
 }
@@ -70,6 +70,86 @@ const ANSWERES : any = [
       {
         id: 3 ,
         answer : 'asnswer 3',
+        checked: false
+      },
+      {
+        id: 4 ,
+        answer : 'asnswer 4',
+        checked: false
+      },
+      {
+        id: 4 ,
+        answer : 'asnswer 4',
+        checked: false
+      },
+      {
+        id: 5 ,
+        answer : 'asnswer 5',
+        checked: false
+      },
+      {
+        id: 5 ,
+        answer : 'asnswer 5',
+        checked: false
+      }
+    ]
+  },
+  {
+    qid: 2, 
+    answers : [
+      {
+        id: 1 ,
+        answer : 'asnswer 11',
+        checked: false
+      },
+      {
+        id: 2 ,
+        answer : 'asnswer 22',
+        checked: false
+      },
+      {
+        id: 3 ,
+        answer : 'asnswer 33',
+        checked: false
+      },
+      {
+        id: 4 ,
+        answer : 'asnswer 4',
+        checked: false
+      },
+      {
+        id: 4 ,
+        answer : 'asnswer 4',
+        checked: false
+      },
+      {
+        id: 5 ,
+        answer : 'asnswer 5',
+        checked: false
+      },
+      {
+        id: 5 ,
+        answer : 'asnswer 5',
+        checked: false
+      }
+    ]
+  },
+  {
+    qid: 3, 
+    answers : [
+      {
+        id: 1 ,
+        answer : 'asnswer 11111',
+        checked: false
+      },
+      {
+        id: 2 ,
+        answer : 'asnswer 212222222222',
+        checked: false
+      },
+      {
+        id: 3 ,
+        answer : 'asnswer 33333333',
         checked: false
       },
       {
