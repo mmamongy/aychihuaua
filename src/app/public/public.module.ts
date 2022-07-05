@@ -8,6 +8,9 @@ import { MainComponent } from './main/main.component';
 import { SharedModule } from './../shared/shared.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { TeamComponent } from './team/team.component';
+import { ServicesComponent } from './services/services.component';
+import { BarbucksComponent } from './barbucks/barbucks.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { QuestionsComponent } from './questions/questions.component';
     HomePageComponent,
     MainComponent,
     ContactUsComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    TeamComponent,
+    ServicesComponent,
+    BarbucksComponent
   ],
   imports: [
     PublicRoutingModule,
