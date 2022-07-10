@@ -4,22 +4,27 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse  justify-content-between" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Aychihuaua</a>
+        <a class="navbar-brand" href="#">
+          <img src="./../../../assets/imgs/logo.png" class="logo-img">
+          Aychihuaua</a>
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/get-started']">Get Started</a>
+            <a class="nav-link"  [routerLink]="['/get-started']">Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" [routerLink]="['/services']">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Barbuckss</a>
+            <a class="nav-link" [routerLink]="['/barbucks']" href="#">Barbuckss</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" [routerLink]="['/team']">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact-us']">Contact Us</a>
           </li>
           
         </ul>
