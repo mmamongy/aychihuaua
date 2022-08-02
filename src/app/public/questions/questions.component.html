@@ -11,15 +11,13 @@
         
         <div class="ui-input__checkbox-wrapper ui-bg__paper--supreme"><input
                 class="ui-input__checkbox--white-toggle" 
-                name="answer" type="checkbox" value="" [(ngModel)]="answer.checked" name="answer"
+                name="answer" type="radio" [value]="answer.id" [(ngModel)]="selectedAnswer[currentQId]" name="answer"
                 id="{{answer.id}}"><label
                 class="ui-input__checkbox-label--white-toggle ui-input__checkbox-label-text--white-toggle"
-                for="{{answer.id}}" data-text="Head">{{answer?.answer}}</label>
-                <span *ngIf="answer.checked" class="checked"><i class="bi bi-check2"></i></span></div>
+                for="{{answer.id}}" data-text="Head">{{answer?.text}}</label>
+                <span *ngIf="selectedAnswer[currentQId] == answer.id" class="checked"><i class="bi bi-check2"></i></span></div>
     </div>
- 
-    
- 
+  
   
 </div>
 <div class="row ">

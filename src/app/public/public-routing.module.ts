@@ -1,3 +1,4 @@
+import { ThankYouComponent } from './thank-you/thank-you.component';
 import { BarbucksComponent } from './barbucks/barbucks.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TeamComponent } from './team/team.component';
@@ -18,6 +19,9 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'barbucks', component: BarbucksComponent },
+  { path: 'thank-you', component: ThankYouComponent },
+
+
   
 ];
 

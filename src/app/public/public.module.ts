@@ -11,6 +11,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
 import { BarbucksComponent } from './barbucks/barbucks.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { BarbucksComponent } from './barbucks/barbucks.component';
     QuestionsComponent,
     TeamComponent,
     ServicesComponent,
-    BarbucksComponent
+    BarbucksComponent,
+    ThankYouComponent
   ],
   imports: [
     PublicRoutingModule,

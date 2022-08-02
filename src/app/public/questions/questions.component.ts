@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DATA } from '../../models/questions';
+import { ANSWERES } from '../../models/answers';
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
@@ -11,20 +13,27 @@ export class QuestionsComponent implements OnInit {
   currentQuestion: any ;
   currentAnswer: any ;
   answers = ANSWERES ;
-
+  selectedAnswer: Array<any> =[] ;
+  resultOcurrances = {
+    mins_20 : 0,
+    mins_30 : 0,
+    hour : 0 
+  }
 
   constructor() { }
 
   ngOnInit(): void {
     this.currentQuestion = this.questions[this.currentQId].q ;
-    this.currentAnswer = this.answers[0].answers;
+    this.currentAnswer = this.questions[this.currentQId].answers;
+    selectedAnswer : Array<any>(this.questions.length) ;
+
 
   }
 
   showNextQuestionAndSaveAnswer( answer: any){
     this.currentQId += 1;
     this.currentQuestion = this.questions[this.currentQId].q ;
-    this.currentAnswer = this.answers[this.currentQId].answers;
+    this.currentAnswer = this.questions[this.currentQId].answers;
   }
 
   onClickGetStarted  () {
@@ -34,144 +43,63 @@ export class QuestionsComponent implements OnInit {
 }
 
 
-const  DATA : any = [
-  {
-      id: 1,
-      q : 'What is this '
-  },
-  {
-      id: 2,
-      q : 'What is this 22'
-  },
-  {
-      id: 3,
-      q : 'What is this 33'
-  },
-  {
-      id: 4,
-      q : 'What is this 44'
-  }
-];
 
-const ANSWERES : any = [
-  {
-    qid: 1, 
-    answers : [
-      {
-        id: 1 ,
-        answer : 'asnswer 1',
-        checked: false
-      },
-      {
-        id: 2 ,
-        answer : 'asnswer 2',
-        checked: false
-      },
-      {
-        id: 3 ,
-        answer : 'asnswer 3',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      }
-    ]
+const Results = {
+  a1: {
+    mins_20: {
+      q2:[[0,1,2,3],[3]],
+      q3:[[0,1,2],[3],[1,3]]
+    },
+    mins_30:{
+      q2:[[0,1,2],[3]],
+      q3:[[1,3]]
+    },
+    hour: {
+      q2:[[1,2]],
+      q3:[[3]]
+    }
   },
-  {
-    qid: 2, 
-    answers : [
-      {
-        id: 1 ,
-        answer : 'asnswer 11',
-        checked: false
-      },
-      {
-        id: 2 ,
-        answer : 'asnswer 22',
-        checked: false
-      },
-      {
-        id: 3 ,
-        answer : 'asnswer 33',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      }
-    ]
+  a2: {
+    mins_20: {
+      q2: [[0,1,2,3],[3],[3],[1,3]],
+      q3: [[0,2,3]]
+    },
+    mins_30:{
+      q2:[[0,1,2],[3]],
+      q3: [[1,3]]
+    },
+    hour: {
+      q2:[[1,2]],
+      q3:[[3]]
+    }
   },
-  {
-    qid: 3, 
-    answers : [
-      {
-        id: 1 ,
-        answer : 'asnswer 11111',
-        checked: false
-      },
-      {
-        id: 2 ,
-        answer : 'asnswer 212222222222',
-        checked: false
-      },
-      {
-        id: 3 ,
-        answer : 'asnswer 33333333',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 4 ,
-        answer : 'asnswer 4',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      },
-      {
-        id: 5 ,
-        answer : 'asnswer 5',
-        checked: false
-      }
-    ]
-  }
-]
+  a3: {
+    mins_20: {
+      q2:[[0,1,2,3],[3]],
+      q3:[[1]]
+    },
+    mins_30:{
+      q2:[[0,1,3],[0,3],[3]],
+      q3:[[1,2,3]]
+    },
+    hour: {
+      q2:[[1,2],[1,2,3]],
+      q3:[[2,3]]
+    }
+  },
+  a4: {
+    mins_20: {
+      q2:[[0,1,2,3],[3]],
+      q3:[[0],[2]]
+    },
+    mins_30:{
+      q2:[[0,3],[0,1,2,3],[0,1,2]],
+      q3:[[1],[2],[3]]
+    },
+    hour: {
+      q2:[[1],[2]],
+      q3:[[3]]
+    }
+  },
+  
+}
