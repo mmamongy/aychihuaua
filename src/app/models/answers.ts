@@ -1,25 +1,25 @@
 
   export const ANSWERES : any = [
     {
-      qid: 1, 
+      qid: 1,
       answers : [
         {
-          id: 1 ,
+          id: 0 ,
           answer : 'asnswer 1',
           checked: false
         },
         {
-          id: 2 ,
+          id: 1 ,
           answer : 'asnswer 2',
           checked: false
         },
         {
-          id: 3 ,
+          id: 2 ,
           answer : 'asnswer 3',
           checked: false
         },
         {
-          id: 4 ,
+          id: 3 ,
           answer : 'asnswer 4',
           checked: false
         },
@@ -41,7 +41,7 @@
       ]
     },
     {
-      qid: 2, 
+      qid: 2,
       answers : [
         {
           id: 1 ,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      qid: 3, 
+      qid: 3,
       answers : [
         {
           id: 1 ,
@@ -121,4 +121,3 @@
       ]
     }
   ]
-  

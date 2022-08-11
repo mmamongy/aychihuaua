@@ -2,10 +2,12 @@
 
 <div class="container">
    <div class="row">
-    <h3 class=" text-center my-4 ">{{currentQuestion}}</h3>
-
-    <p class="text-center my-3">Select One Option</p>
+    <div class="text-center my-4">
+    <h3 class=" text-center">{{currentQuestion}}</h3>
+    <p *ngIf="currentQuestion.multi_ans">(you can select more than one option)</p>
+    <p *ngIf="!currentQuestion.multi_ans">(select only one option)</p>
    </div>
+</div>
 <div class="row ui-grid--flush flex-wrap space-b is-mobile ui-grid--compressed questions-wrapper">
     <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let answer of currentAnswer; index as i">
         
