@@ -1,15 +1,26 @@
 import { LoginComponent } from './login/login.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminModule } from './admin/admin.module';
 
 const routes: Routes = [
   {
-    path:'', component: HomePageComponent
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+ },
+  {
+    path: '',
+    loadChildren: () => import ('./public/public.module').then(m => m.PublicModule)
   },
   {
-    path:'login', Component: LoginComponent
+    path: 'admin',
+    loadChildren: () => import ('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
+    path:'login', component: LoginComponent
   }
+
 ];
 
 @NgModule({
@@ -17,3 +28,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

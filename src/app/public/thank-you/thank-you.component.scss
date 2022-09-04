@@ -1,0 +1,15 @@
+@import './../../../assets/scss/variables.scss'; 
+.container-fluid{
+    background: $dark-blue;
+    padding: 0 !important;
+}
+.message-container{
+
+    background: $dark-blue;
+    color: $white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    min-height: 300px;
+}

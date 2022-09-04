@@ -1,0 +1,44 @@
+@import './../../../assets/scss/variables.scss';
+@import './../../../assets/scss/helper.scss';
+
+.container-fluid{
+    padding: 0 !important;
+}
+.contact-us-wrapper {
+    margin: auto;
+    min-height: 500px;
+    background-color: $dark-blue;
+    padding: 0 !important;
+    > div {
+        width: 50%;
+    }
+}
+
+.container-fluid{
+    background-color: $white;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: none;
+    &focus {
+        border: none;
+        outline: none;
+    }
+}
+
+.form-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: $dark-blue;
+    color: $white;
+    input, textarea{
+        border-radius: 9px;
+        &:hover, &:focus {
+            box-shadow: none;
+            
+        }
+    }
+}
+

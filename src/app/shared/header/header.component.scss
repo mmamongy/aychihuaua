@@ -1,9 +1,19 @@
 @import './../../../assets/scss/variables.scss';
 .navbar {
-    height: 120px;
+    min-height: 120px;
+
+    .logo-img{
+        width: 50px;
+    }
  
     .navbar-dark .navbar-brand{
         color: $primary-color;
+    }
+
+    .nav-link{
+        &:hover{
+            cursor: pointer;
+        }
     }
   
 }
